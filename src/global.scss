@@ -1,0 +1,246 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.table-custom{
+  width: 100%;
+  thead {
+    tr {
+      th {
+        position: relative;
+        color: #000000d9;
+        font-weight: 500;
+        text-align: left;
+        background: #fafafa;
+        border-bottom: 1px solid rgba(0,0,0,.06);
+        transition: background .3s ease;
+        padding: 16px;
+        overflow-wrap: break-word
+      }
+    }
+  }
+
+  tbody{
+    width: 100%;
+    text-align: left;
+    border-radius: 2px 2px 0 0;
+    border-collapse: separate;
+    border-spacing: 0;
+
+    tr{
+      display: table-row;
+      vertical-align: inherit;
+      //border-color: inherit;
+
+      td{
+        border-bottom: 1px solid rgba(0,0,0,.06);
+        transition: background .3s;
+      }
+    }
+  }
+
+  .border-none{
+    border: none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.bg-white{
+  background: #FFFFFF;
+}
+
+.font-label-thumbnail{
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-weight: 500;
+  font-feature-settings: 'tnum', "tnum";
+  margin-bottom: 12px;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.box-upload-file-image{
+  width: 80%;
+  background: #FFFFFF;
+  /* 1 */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+
+  .font-label-image{
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    font-weight: 500;
+    font-feature-settings: 'tnum', "tnum";
+    margin-bottom: 12px;
+  }
+
+  .max-size-image {
+    width: 100%;
+  }
+}
+
+.box-upload-file{
+  display: flex;
+  padding-left: 1rem;
+}
+
+.text-1-row {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+.btn-primary{
+  background: #1670F7;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.text-danger{
+  color: #ff4d4f;
+  font-size: 0.9rem;
+  line-height: 1;
+  content: '*';
+}
+
+.custom-image{
+  object-fit: cover;
+}
+
+.ck-content > blockquote,
+.ck-content > dl,
+.ck-content > dd,
+.ck-content > h1,
+.ck-content > h2,
+.ck-content > h3,
+.ck-content > h4,
+.ck-content > h5,
+.ck-content > h6,
+.ck-content > hr,
+.ck-content > figure,
+.ck-content > p,
+.ck-content > pre {
+  margin: revert;
+}
+
+.ck-content > ol,
+.ck-content > ul {
+  list-style: revert;
+  margin: revert;
+  padding: revert;
+}
+
+.ck-content > table {
+  border-collapse: revert;
+}
+
+.ck-content > h1,
+.ck-content > h2,
+.ck-content > h3,
+.ck-content > h4,
+.ck-content > h5,
+.ck-content > h6 {
+  font-size: revert;
+  font-weight: revert;
+}
+
+.default-ul-ol{
+  font-family: sans-serif;
+  ul li {
+    list-style: disc;
+  }
+
+  ol li {
+    list-style: auto;
+  }
+
+  blockquote {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 20px;
+    padding-right: 8px;
+    border-left: 5px solid #ccc;
+    font-style: italic;
+  }
+}
+
+.ellipse-2-line {
+  display: block;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  /* autoprefixer: off */
+}

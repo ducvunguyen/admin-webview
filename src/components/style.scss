@@ -1,0 +1,21 @@
+
+#card-sort {
+    @mixin custom-icon{
+        cursor: pointer;
+        font-size: 11px;
+    }
+
+    .custom-icon-svg{
+        @include custom-icon;
+        svg{
+            opacity: 0.3;
+        }
+    }
+
+    .custom-icon-svg-active{
+        @include custom-icon;
+        svg{
+            opacity: 1;
+        }
+    }
+}

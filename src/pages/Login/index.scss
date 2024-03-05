@@ -1,0 +1,17 @@
+.wrap-login {
+    min-height: 100vh !important;
+
+    .container-login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .login-form {
+            width: 300px;
+        }
+
+        .login-form-button {
+            width: 100%;
+        }
+    }
+}

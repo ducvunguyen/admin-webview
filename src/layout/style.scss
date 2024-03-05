@@ -1,0 +1,62 @@
+.navbar-container {
+    .navbar-content {
+        min-height: 100vh;
+    }
+
+    .trigger {
+        padding: 0 24px;
+        font-size: 18px;
+        line-height: 64px;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+
+    .trigger:hover {
+        color: #1890ff;
+    }
+
+    .logo {
+        height: 32px;
+        margin: 16px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 32px;
+            width: auto ;
+        }
+    }
+
+    .site-layout .site-layout-background {
+        background: #fff;
+    }
+}
+
+.custom-content-notification{
+    width: 430px;
+    max-height: 336px;
+    overflow: auto;
+    padding: 0.4rem 1rem;
+}
+
+.custom-item-notification{
+    cursor: pointer;
+    padding: 5px;
+}
+
+.custom-item-notification-active{
+    background: #E6EEF7;
+}
+
+.custom-item-notification:hover{
+    background: #E6EEF7;
+}
+
+.custom-content-notification{
+    //height: 20vh;
+    //overflow-y: auto;
+    //.ant-popover-inner-content {
+    //    padding: revert;
+    //}
+}
